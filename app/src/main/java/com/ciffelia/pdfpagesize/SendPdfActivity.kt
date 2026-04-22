@@ -23,7 +23,7 @@ class SendPdfActivity : AppCompatActivity(R.layout.activity_send_pdf) {
         displayPdfMetadata()
     }
 
-    fun closeActivity(view: View) {
+    fun closeActivity(@Suppress("UNUSED_PARAMETER") view: View) {
         finish()
     }
 

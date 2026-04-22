@@ -1,7 +1,5 @@
 package com.ciffelia.pdfpagesize.paper
 
-import java.util.Locale
-
 data class Paper(val width: Int, val height: Int) {
     val sizeStandard: PaperSizeStandard? by lazy {
         findClosestStandard(width, height)
@@ -17,6 +15,6 @@ data class Paper(val width: Int, val height: Int) {
 
     enum class Orientation {
         PORTRAIT, LANDSCAPE, SQUARE;
-        override fun toString() = name.toLowerCase(Locale.ENGLISH)
+        override fun toString() = name.lowercase()
     }
 }

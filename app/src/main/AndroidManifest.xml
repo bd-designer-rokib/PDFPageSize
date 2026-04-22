@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.ciffelia.pdfpagesize">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -13,7 +12,8 @@
         <activity
             android:name=".SendPdfActivity"
             android:theme="@style/Theme.PDFPageSize.Translucent"
-            android:excludeFromRecents="true">
+            android:excludeFromRecents="true"
+            android:exported="true">
 
             <intent-filter tools:ignore="AppLinkUrlError">
                 <action android:name="android.intent.action.SEND" />
